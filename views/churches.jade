@@ -1,0 +1,28 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #{title}
+  a(href='/', title='CME Church Listing') Index Page
+  p
+  table.table.table-bordered
+   each item, i in results
+    tr
+     td= i+1
+     td= item.church
+     td= item.address
+     td= item.e_dist
+     td= item.city
+     td= item.state
+     td= item.zipcode
+     td= item.phone
+     case item.gmap
+      when 'n'
+       td: i.icon-remove
+      when 'y'
+       td: i.icon-ok
+
+  table
+   each thing, i in fields
+    tr
+     td= thing.name
