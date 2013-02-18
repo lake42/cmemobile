@@ -6,23 +6,28 @@ block content
   a(href='/', title='CME Church Listing') Index Page
   p
   table.table.table-bordered
-   each item, i in results
     tr
-     td= i+1
-     td= item.church
-     td= item.address
-     td= item.e_dist
-     td= item.city
-     td= item.state
-     td= item.zipcode
-     td= item.phone
-     case item.gmap
-      when 'n'
-       td: i.icon-remove
-      when 'y'
-       td: i.icon-ok
-
-  table
-   each thing, i in fields
-    tr
-     td= thing.name
+     th= fields[0].name
+     th= fields[4].name
+     th= fields[5].name
+     th= fields[3].name
+     th= fields[6].name
+     th= fields[7].name
+     th= fields[8].name
+     th= fields[9].name
+     th= fields[1].name
+    - each item, i in results
+      tr
+       td= i+1
+       td= item.church
+       td= item.address
+       td= item.e_dist
+       td= item.city
+       td= item.state
+       td= item.zipcode
+       td= item.phone
+       case item.gmap
+        when 'n'
+         td: i.icon-remove
+        when 'y'
+         td: i.icon-ok

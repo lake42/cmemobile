@@ -2,14 +2,14 @@
 /**
  * Module dependencies.
  */
-
-var express = require('express')
-  , routes = require('./routes')
-  , user = require('./routes/user')
-  , http = require('http')
-  , path = require('path');
+var express   = require('express')
+  , routes    = require('./routes')
+  , user      = require('./routes/user')
+  , http      = require('http')
+  , path      = require('path');
 
 var mysql = require('mysql');
+var config = require('./modules/lib/config');
 
 var app = express();
 
@@ -27,15 +27,15 @@ app.configure(function(){
 });
 
 app.configure('development', function(){
-  app.use(express.errorHandler());
+  app.use(express.errorHandler({ dumpExceptions: true, showStack: true }));
 });
 
 app.get('/churches', function(req,res){
   var client = mysql.createConnection({
-    host: '127.0.0.1',
-    user: 'root',
-    password: 'ronky',
-    database: 'cme'
+    host: config.host,
+    user: config.user,
+    password: config.password,
+    database: config.db
   });
 
   client.query('SELECT * FROM churches WHERE episcopal_district <> "Tenth" LIMIT 0,25', 
@@ -43,7 +43,7 @@ app.get('/churches', function(req,res){
       res.render('churches', {
           results:results,
           fields:fields,
-          title: 'ExpressW', 
+          title: config.appName,
           token: 'James Lakey'
       });
     }
