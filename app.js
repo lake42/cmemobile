@@ -5,10 +5,11 @@
 var express   = require('express')
   , routes    = require('./routes')
   , user      = require('./routes/user')
+//  , models    = {}
   , http      = require('http')
+  , mysql     = require('mysql')
   , path      = require('path');
 
-var mysql = require('mysql');
 var config = require('./modules/lib/config');
 
 var app = express();

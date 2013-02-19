@@ -1,10 +1,10 @@
-var config = (function(){
+var config = {
     appName: "CME Database App",
     host:"127.0.0.1",
     user:"root",
     password: "ronky",
     db:"cme"
-}); 
+}
 
 module.exports = config;
 
