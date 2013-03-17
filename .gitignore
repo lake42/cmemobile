@@ -1,3 +1,4 @@
 .DS_Store
 calendar/*
 todos/*
+.idea/workspace.xml
