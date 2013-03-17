@@ -1,14 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="378047fa-d808-4468-83e9-4b0a6a733302" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tester/index.html" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="378047fa-d808-4468-83e9-4b0a6a733302" name="Default" comment="" />
     <ignored path="cmemobile.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="378047fa-d808-4468-83e9-4b0a6a733302" time="1363545940603" ignored="false" />
+    <file path="/Dummy.txt" changelist="378047fa-d808-4468-83e9-4b0a6a733302" time="1363546258534" ignored="false" />
     <file path="/app.js" changelist="378047fa-d808-4468-83e9-4b0a6a733302" time="1363481511032" ignored="false" />
     <file path="/README.md" changelist="378047fa-d808-4468-83e9-4b0a6a733302" time="1363545926163" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -39,10 +35,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="README.md" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="README.md" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="1" selection-start="30" selection-end="30" vertical-scroll-proportion="0.13452914">
+            <state line="4" column="1" selection-start="30" selection-end="30" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="8" column="17" selection-start="81" selection-end="81" vertical-scroll-proportion="0.2843602">
               <folding />
             </state>
           </provider>
@@ -56,6 +61,12 @@
     </FindUsagesManager>
   </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="James Lakey" />
+      </list>
+    </option>
+    <option name="PUSH_AUTO_UPDATE" value="true" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
@@ -320,7 +331,11 @@
       <created>1363545946256</created>
       <updated>1363545946256</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="3/16/13 - initial import">
+      <created>1363546284813</created>
+      <updated>1363546284813</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TodoView" selected-index="1">
@@ -371,8 +386,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="OFFER_MOVE_TO_ANOTHER_CHANGELIST_ON_PARTIAL_COMMIT" value="true" />
-    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="true" />
-    <option name="CHECK_NEW_TODO" value="true" />
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_NEW_TODO" value="false" />
     <option name="myTodoPanelSettings">
       <value>
         <are-packages-shown value="false" />
@@ -491,11 +506,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="17" selection-start="81" selection-end="81" vertical-scroll-proportion="0.2690583" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state line="2" column="7" selection-start="28" selection-end="28" vertical-scroll-proportion="0.0">
@@ -533,7 +543,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="1" selection-start="30" selection-end="30" vertical-scroll-proportion="0.13452914">
+        <state line="4" column="1" selection-start="30" selection-end="30" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="17" selection-start="81" selection-end="81" vertical-scroll-proportion="0.2843602">
           <folding />
         </state>
       </provider>
