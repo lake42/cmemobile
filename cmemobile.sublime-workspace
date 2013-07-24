@@ -15,7 +15,74 @@
 			"file": "app.js",
 			"settings":
 			{
-				"buffer_size": 855,
+				"buffer_size": 1556,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "modules/lib/express.js",
+			"settings":
+			{
+				"buffer_size": 443,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "modules/lib/config.js",
+			"settings":
+			{
+				"buffer_size": 613,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "modules/lib/setup.js",
+			"settings":
+			{
+				"buffer_size": 581,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "routes/routes.js",
+			"settings":
+			{
+				"buffer_size": 49,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "routes/user.js",
+			"settings":
+			{
+				"buffer_size": 107,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "                                                 describe(\"Player\", function() {\n  var player;\n  var song;\n\n  beforeEach(function() {\n    player = new Player();\n    song = new Song();\n  });\n\n  it(\"should be able to play a Song\", function() {\n    player.play(song);\n    expect(player.currentlyPlayingSong).toEqual(song);\n\n    //demonstrates use of custom matcher\n    expect(player).toBePlaying(song);\n  });\n\n  describe(\"when song has been paused\", function() {\n    beforeEach(function() {\n      player.play(song);\n      player.pause();\n    });\n\n    it(\"should indicate that the song is currently paused\", function() {\n      expect(player.isPlaying).toBeFalsy();\n\n      // demonstrates use of 'not' with a custom matcher\n      expect(player).not.toBePlaying(song);\n    });\n\n    it(\"should be possible to resume\", function() {\n      player.resume();\n      expect(player.isPlaying).toBeTruthy();\n      expect(player.currentlyPlayingSong).toEqual(song);\n    });\n  });\n\n  // demonstrates use of spies to intercept and test method calls\n  it(\"tells the current song if the user has made it a favorite\", function() {\n    spyOn(song, 'persistFavoriteStatus');\n\n    player.play(song);\n    player.makeFavorite();\n\n    expect(song.persistFavoriteStatus).toHaveBeenCalledWith(true);\n  });\n\n  //demonstrates use of expected exceptions\n  describe(\"#resume\", function() {\n    it(\"should throw an exception if song is already playing\", function() {\n      player.play(song);\n\n      expect(function() {\n        player.resume();\n      }).toThrow(\"song is already playing\");\n    });\n  });\n});",
+			"file": "public/jasmine-standalone-1.3.1/spec/PlayerSpec.js",
+			"file_size": 1522,
+			"file_write_time": 1354546114000000,
+			"settings":
+			{
+				"buffer_size": 1571,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "public/jasmine-standalone-1.3.1/SpecRunner.html",
+			"settings":
+			{
+				"buffer_size": 1547,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "public/jasmine-standalone-1.3.1/spec/SpecHelper.js",
+			"settings":
+			{
+				"buffer_size": 228,
 				"line_ending": "Unix"
 			}
 		}
@@ -44,6 +111,25 @@
 	},
 	"file_history":
 	[
+		"/Library/WebServer/Documents/cmemobile/modules/lib/bootstrap.js",
+		"/Library/WebServer/Documents/cmemobile/.gitignore",
+		"/Library/WebServer/Documents/cmemobile/routes/index.js",
+		"/Library/WebServer/Documents/cmemobile/modules/lib/main.js",
+		"/Library/WebServer/Documents/cmemobile/modules/config.js",
+		"/Library/WebServer/Documents/cmemobile/modules/config2.coffee",
+		"/Library/WebServer/Documents/cmemobile/modules/config.coffee",
+		"/Library/WebServer/Documents/cmemobile/views/churches.jade",
+		"/Library/WebServer/Documents/cmemobile/views/layout.jade",
+		"/Library/WebServer/Documents/cmemobile/public/javascripts/global.js",
+		"/Library/WebServer/Documents/cmemobile/public/javascripts/config.js",
+		"/Library/WebServer/Documents/cmemobile/node_modules/express/index.js",
+		"/Library/WebServer/Documents/cmemobile/node_modules/express/lib/response.js",
+		"/Library/WebServer/Documents/cmemobile/routes/user.js",
+		"/Library/WebServer/Documents/cmemobile/views/index.jade",
+		"/Library/WebServer/Documents/cmemobile/public/stylesheets/bootstrap.css",
+		"/Library/WebServer/Documents/cmemobile/node_modules/express/bin/express",
+		"/Library/WebServer/Documents/cmemobile/package.json",
+		"/Library/WebServer/Documents/cmemobile/cmemobile.sublime-project",
 		"/Library/WebServer/Documents/cmemobile4/assets/js/app.js",
 		"/Library/WebServer/Documents/cmemobile4/assets/js/functions2.js",
 		"/Library/WebServer/Documents/cmemobile4/assets/css/jqm-docs.css",
@@ -88,7 +174,7 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 8,
 			"sheets":
 			[
 				{
@@ -96,7 +182,7 @@
 					"file": "app.js",
 					"settings":
 					{
-						"buffer_size": 855,
+						"buffer_size": 1556,
 						"regions":
 						{
 						},
@@ -115,6 +201,244 @@
 							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
 							"tab_size": 2,
 							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "modules/lib/express.js",
+					"settings":
+					{
+						"buffer_size": 443,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								358,
+								358
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "modules/lib/config.js",
+					"settings":
+					{
+						"buffer_size": 613,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								10,
+								10
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "modules/lib/setup.js",
+					"settings":
+					{
+						"buffer_size": 581,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								446,
+								446
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "routes/routes.js",
+					"settings":
+					{
+						"buffer_size": 49,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								45,
+								45
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "routes/user.js",
+					"settings":
+					{
+						"buffer_size": 107,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "public/jasmine-standalone-1.3.1/spec/PlayerSpec.js",
+					"settings":
+					{
+						"buffer_size": 1571,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								49,
+								49
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "public/jasmine-standalone-1.3.1/SpecRunner.html",
+					"settings":
+					{
+						"buffer_size": 1547,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								697,
+								697
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "public/jasmine-standalone-1.3.1/spec/SpecHelper.js",
+					"settings":
+					{
+						"buffer_size": 228,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,

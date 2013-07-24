@@ -1,6 +1,6 @@
 extends layout
 
-block content
+block content  
   h1= title
   p Welcome to #{title}
   a(href='/', title='CME Church Listing') Index Page
@@ -9,23 +9,17 @@ block content
     tr
      th= fields[0].name
      th= fields[4].name
-     th= fields[5].name
+     th= fields[2].name
      th= fields[3].name
-     th= fields[6].name
-     th= fields[7].name
-     th= fields[8].name
-     th= fields[9].name
-     th= fields[1].name
+     th= 'E. District'
+     th= 'GMapped?'
     - each item, i in results
       tr
        td= i+1
-       td= item.church
-       td= item.address
+       td= item.google_address
+       td= item.lat
+       td= item.lng
        td= item.e_dist
-       td= item.city
-       td= item.state
-       td= item.zipcode
-       td= item.phone
        case item.gmap
         when 'n'
          td: i.icon-remove

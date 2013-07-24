@@ -1,10 +1,11 @@
-
 /**
+
  * tester
  * cherry pick
  * Module dependencies.
  */
 var express   = require('express')
+  , resources = require('express-resource')
   , routes    = require('./routes')
   , user      = require('./routes/user')
   , models    = {}
@@ -40,18 +41,17 @@ app.get('/churches', function(req,res){
     database: config.db
   });
  
-  client.query('SELECT * FROM churches WHERE episcopal_district <> "Tenth" LIMIT 0,25', 
-    function(err, results, fields){
+  client.query('SELECT * FROM churches_scratch WHERE episcopal_district != "Tenth" LIMIT 0,25', function(err, results, fields){
       res.render('churches', {
           results:results,
           fields:fields,
           title: config.appName,
           token: 'James Lakey'
       });
-    }
-  );
+    });
 });
- 
+
+app.get('/church', church.heythere); 
 app.get('/', routes.index);
 app.get('/users', user.list);
  
